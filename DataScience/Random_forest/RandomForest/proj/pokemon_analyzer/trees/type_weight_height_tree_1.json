@@ -1,0 +1,57 @@
+[
+  {
+    "column": 0,
+    "value": "ice",
+    "name": "type"
+  },
+  [
+    {
+      "column": 1,
+      "value": 177.07761123523412,
+      "name": " weight"
+    },
+    " Lapras",
+    " Glaceon"
+  ],
+  [
+    {
+      "column": 0,
+      "value": "flying",
+      "name": "type"
+    },
+    [
+      {
+        "column": 2,
+        "value": 0.6110659674941724,
+        "name": " height"
+      },
+      " Zubat",
+      " Pidgey"
+    ],
+    [
+      {
+        "column": 1,
+        "value": 80.94078841812848,
+        "name": " weight"
+      },
+      " Ponyta",
+      [
+        {
+          "column": 0,
+          "value": "fire",
+          "name": "type"
+        },
+        " Vulpix",
+        [
+          {
+            "column": 2,
+            "value": 0.4271935516230848,
+            "name": " height"
+          },
+          " Meowth",
+          " Rattata"
+        ]
+      ]
+    ]
+  ]
+]

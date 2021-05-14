@@ -1,0 +1,9 @@
+[
+  "pokemon_analyzer",
+  "/database/pokemon_analyzer.csv",
+  [
+    "/trees/random_tree_1.json",
+    "/trees/type_weight_height_tree_1.json",
+    "/trees/.json"
+  ]
+]

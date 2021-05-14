@@ -1,0 +1,41 @@
+[
+  {
+    "column": 12,
+    "value": 0.144806006015029,
+    "name": "meanfun"
+  },
+  [
+    {
+      "column": 3,
+      "value": 0.149539260220636,
+      "name": "Q25"
+    },
+    "female",
+    [
+      {
+        "column": 18,
+        "value": 4.359375,
+        "name": "dfrange"
+      },
+      "male",
+      "female"
+    ]
+  ],
+  [
+    {
+      "column": 5,
+      "value": 0.0707749077490775,
+      "name": "IQR"
+    },
+    "male",
+    [
+      {
+        "column": 5,
+        "value": 0.0540268456375839,
+        "name": "IQR"
+      },
+      "female",
+      "male"
+    ]
+  ]
+]

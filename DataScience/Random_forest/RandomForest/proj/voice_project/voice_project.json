@@ -1,0 +1,11 @@
+[
+  "voice_project",
+  "/database/voice_project.csv",
+  [
+    "/trees/random_sample_1.json",
+    "/trees/maximum_sample_1.json",
+    "/trees/meanfun_Q25_sample_1.json",
+    "/trees/sd_Q25_Q75_IQR_dfrange_sample_1.json",
+    "/trees/meanfreq_minfun_maxfun_dfrange_sample_1.json"
+  ]
+]

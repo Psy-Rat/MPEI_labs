@@ -1,0 +1,257 @@
+[
+  {
+    "column": 5,
+    "value": 0.0850386398763524,
+    "name": "IQR"
+  },
+  [
+    {
+      "column": 5,
+      "value": 0.157854588796186,
+      "name": "IQR"
+    },
+    [
+      {
+        "column": 5,
+        "value": 0.178856345885635,
+        "name": "IQR"
+      },
+      [
+        {
+          "column": 5,
+          "value": 0.23630718954248398,
+          "name": "IQR"
+        },
+        "female",
+        "male"
+      ],
+      [
+        {
+          "column": 5,
+          "value": 0.167531380753138,
+          "name": "IQR"
+        },
+        [
+          {
+            "column": 5,
+            "value": 0.168,
+            "name": "IQR"
+          },
+          "female",
+          "male"
+        ],
+        "female"
+      ]
+    ],
+    [
+      {
+        "column": 5,
+        "value": 0.13823899371069198,
+        "name": "IQR"
+      },
+      [
+        {
+          "column": 5,
+          "value": 0.14121387283237,
+          "name": "IQR"
+        },
+        [
+          {
+            "column": 5,
+            "value": 0.15257485029940102,
+            "name": "IQR"
+          },
+          "male",
+          [
+            {
+              "column": 5,
+              "value": 0.149607843137255,
+              "name": "IQR"
+            },
+            "female",
+            "male"
+          ]
+        ],
+        "female"
+      ],
+      [
+        {
+          "column": 5,
+          "value": 0.0958461538461539,
+          "name": "IQR"
+        },
+        [
+          {
+            "column": 5,
+            "value": 0.113457249070632,
+            "name": "IQR"
+          },
+          "male",
+          [
+            {
+              "column": 5,
+              "value": 0.113253731343284,
+              "name": "IQR"
+            },
+            "female",
+            [
+              {
+                "column": 5,
+                "value": 0.10508860759493699,
+                "name": "IQR"
+              },
+              "male",
+              [
+                {
+                  "column": 5,
+                  "value": 0.104749801429706,
+                  "name": "IQR"
+                },
+                "female",
+                [
+                  {
+                    "column": 5,
+                    "value": 0.10096153846153802,
+                    "name": "IQR"
+                  },
+                  "male",
+                  [
+                    {
+                      "column": 5,
+                      "value": 0.10036224976167801,
+                      "name": "IQR"
+                    },
+                    "female",
+                    "male"
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          {
+            "column": 5,
+            "value": 0.0947606382978723,
+            "name": "IQR"
+          },
+          "female",
+          "male"
+        ]
+      ]
+    ]
+  ],
+  [
+    {
+      "column": 5,
+      "value": 0.0751219512195122,
+      "name": "IQR"
+    },
+    [
+      {
+        "column": 5,
+        "value": 0.0825505050505051,
+        "name": "IQR"
+      },
+      "female",
+      [
+        {
+          "column": 5,
+          "value": 0.0786039453717754,
+          "name": "IQR"
+        },
+        [
+          {
+            "column": 5,
+            "value": 0.0802277039848197,
+            "name": "IQR"
+          },
+          [
+            {
+              "column": 5,
+              "value": 0.0821269296740995,
+              "name": "IQR"
+            },
+            "male",
+            [
+              {
+                "column": 5,
+                "value": 0.0820103986135182,
+                "name": "IQR"
+              },
+              "female",
+              [
+                {
+                  "column": 5,
+                  "value": 0.0803371198241114,
+                  "name": "IQR"
+                },
+                "male",
+                "female"
+              ]
+            ]
+          ],
+          "male"
+        ],
+        [
+          {
+            "column": 5,
+            "value": 0.0757161981258367,
+            "name": "IQR"
+          },
+          "female",
+          "male"
+        ]
+      ]
+    ],
+    [
+      {
+        "column": 5,
+        "value": 0.0223824451410658,
+        "name": "IQR"
+      },
+      [
+        {
+          "column": 5,
+          "value": 0.0350454742312689,
+          "name": "IQR"
+        },
+        [
+          {
+            "column": 5,
+            "value": 0.0350997150997151,
+            "name": "IQR"
+          },
+          [
+            {
+              "column": 5,
+              "value": 0.0500397140587768,
+              "name": "IQR"
+            },
+            [
+              {
+                "column": 5,
+                "value": 0.0501365705614567,
+                "name": "IQR"
+              },
+              "female",
+              "male"
+            ],
+            "female"
+          ],
+          "male"
+        ],
+        "female"
+      ],
+      [
+        {
+          "column": 5,
+          "value": 0.0218410852713178,
+          "name": "IQR"
+        },
+        "male",
+        "female"
+      ]
+    ]
+  ]
+]

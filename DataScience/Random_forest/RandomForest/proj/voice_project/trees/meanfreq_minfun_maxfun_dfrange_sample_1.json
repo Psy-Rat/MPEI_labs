@@ -1,0 +1,353 @@
+[
+  {
+    "column": 0,
+    "value": 0.204193197617248,
+    "name": "meanfreq"
+  },
+  [
+    {
+      "column": 14,
+      "value": 0.25130890052356003,
+      "name": "maxfun"
+    },
+    [
+      {
+        "column": 18,
+        "value": 4.59375,
+        "name": "dfrange"
+      },
+      "female",
+      [
+        {
+          "column": 0,
+          "value": 0.212271472320408,
+          "name": "meanfreq"
+        },
+        "female",
+        "male"
+      ]
+    ],
+    "male"
+  ],
+  [
+    {
+      "column": 13,
+      "value": 0.0516129032258065,
+      "name": "minfun"
+    },
+    [
+      {
+        "column": 14,
+        "value": 0.208333333333333,
+        "name": "maxfun"
+      },
+      [
+        {
+          "column": 0,
+          "value": 0.141797816067795,
+          "name": "meanfreq"
+        },
+        [
+          {
+            "column": 0,
+            "value": 0.200428134010752,
+            "name": "meanfreq"
+          },
+          "male",
+          "female"
+        ],
+        "male"
+      ],
+      "male"
+    ],
+    [
+      {
+        "column": 13,
+        "value": 0.0266666666666667,
+        "name": "minfun"
+      },
+      [
+        {
+          "column": 18,
+          "value": 8.25,
+          "name": "dfrange"
+        },
+        [
+          {
+            "column": 18,
+            "value": 10.1015625,
+            "name": "dfrange"
+          },
+          "male",
+          [
+            {
+              "column": 0,
+              "value": 0.196161194188111,
+              "name": "meanfreq"
+            },
+            "female",
+            [
+              {
+                "column": 0,
+                "value": 0.18906347718605301,
+                "name": "meanfreq"
+              },
+              [
+                {
+                  "column": 14,
+                  "value": 0.277456647398844,
+                  "name": "maxfun"
+                },
+                [
+                  {
+                    "column": 13,
+                    "value": 0.0482897384305835,
+                    "name": "minfun"
+                  },
+                  "female",
+                  "male"
+                ],
+                "male"
+              ],
+              "female"
+            ]
+          ]
+        ],
+        [
+          {
+            "column": 0,
+            "value": 0.15140050921907902,
+            "name": "meanfreq"
+          },
+          [
+            {
+              "column": 14,
+              "value": 0.23188405797101397,
+              "name": "maxfun"
+            },
+            [
+              {
+                "column": 0,
+                "value": 0.20230616241811897,
+                "name": "meanfreq"
+              },
+              [
+                {
+                  "column": 0,
+                  "value": 0.203079980774521,
+                  "name": "meanfreq"
+                },
+                "male",
+                "female"
+              ],
+              [
+                {
+                  "column": 18,
+                  "value": 6.5859375,
+                  "name": "dfrange"
+                },
+                [
+                  {
+                    "column": 18,
+                    "value": 7.21875,
+                    "name": "dfrange"
+                  },
+                  "male",
+                  "female"
+                ],
+                "male"
+              ]
+            ],
+            [
+              {
+                "column": 13,
+                "value": 0.04,
+                "name": "minfun"
+              },
+              "female",
+              [
+                {
+                  "column": 18,
+                  "value": 5.6171875,
+                  "name": "dfrange"
+                },
+                [
+                  {
+                    "column": 13,
+                    "value": 0.0294117647058824,
+                    "name": "minfun"
+                  },
+                  "female",
+                  "male"
+                ],
+                "male"
+              ]
+            ]
+          ],
+          "female"
+        ]
+      ],
+      [
+        {
+          "column": 0,
+          "value": 0.15971499988891502,
+          "name": "meanfreq"
+        },
+        [
+          {
+            "column": 18,
+            "value": 5.4921875,
+            "name": "dfrange"
+          },
+          [
+            {
+              "column": 0,
+              "value": 0.20337492275373,
+              "name": "meanfreq"
+            },
+            "male",
+            [
+              {
+                "column": 0,
+                "value": 0.20337492275373,
+                "name": "meanfreq"
+              },
+              "male",
+              "female"
+            ]
+          ],
+          [
+            {
+              "column": 14,
+              "value": 0.271186440677966,
+              "name": "maxfun"
+            },
+            [
+              {
+                "column": 18,
+                "value": 3.34375,
+                "name": "dfrange"
+              },
+              [
+                {
+                  "column": 13,
+                  "value": 0.0163766632548618,
+                  "name": "minfun"
+                },
+                "male",
+                "female"
+              ],
+              "female"
+            ],
+            [
+              {
+                "column": 13,
+                "value": 0.0212765957446809,
+                "name": "minfun"
+              },
+              [
+                {
+                  "column": 0,
+                  "value": 0.178051398902744,
+                  "name": "meanfreq"
+                },
+                [
+                  {
+                    "column": 18,
+                    "value": 5.015625,
+                    "name": "dfrange"
+                  },
+                  "male",
+                  "female"
+                ],
+                "female"
+              ],
+              [
+                {
+                  "column": 13,
+                  "value": 0.0156555772994129,
+                  "name": "minfun"
+                },
+                "male",
+                "female"
+              ]
+            ]
+          ]
+        ],
+        [
+          {
+            "column": 0,
+            "value": 0.105493079183716,
+            "name": "meanfreq"
+          },
+          [
+            {
+              "column": 13,
+              "value": 0.0192771084337349,
+              "name": "minfun"
+            },
+            [
+              {
+                "column": 13,
+                "value": 0.0209150326797386,
+                "name": "minfun"
+              },
+              "male",
+              [
+                {
+                  "column": 18,
+                  "value": 5.59375,
+                  "name": "dfrange"
+                },
+                "male",
+                "female"
+              ]
+            ],
+            [
+              {
+                "column": 0,
+                "value": 0.124434552463985,
+                "name": "meanfreq"
+              },
+              [
+                {
+                  "column": 18,
+                  "value": 0.5546875,
+                  "name": "dfrange"
+                },
+                "male",
+                [
+                  {
+                    "column": 13,
+                    "value": 0.0165118679050568,
+                    "name": "minfun"
+                  },
+                  "female",
+                  "male"
+                ]
+              ],
+              [
+                {
+                  "column": 0,
+                  "value": 0.11957197735959099,
+                  "name": "meanfreq"
+                },
+                "female",
+                [
+                  {
+                    "column": 18,
+                    "value": 5.5,
+                    "name": "dfrange"
+                  },
+                  "female",
+                  "male"
+                ]
+              ]
+            ]
+          ],
+          "female"
+        ]
+      ]
+    ]
+  ]
+]

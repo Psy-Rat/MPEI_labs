@@ -1,0 +1,153 @@
+[
+  {
+    "column": 5,
+    "value": 0.0754501216545012,
+    "name": "IQR"
+  },
+  [
+    {
+      "column": 5,
+      "value": 0.156139410187668,
+      "name": "IQR"
+    },
+    [
+      {
+        "column": 1,
+        "value": 0.0887994753035756,
+        "name": "sd"
+      },
+      "female",
+      [
+        {
+          "column": 5,
+          "value": 0.16317880794702,
+          "name": "IQR"
+        },
+        [
+          {
+            "column": 4,
+            "value": 0.21736465781409603,
+            "name": "Q75"
+          },
+          "female",
+          "male"
+        ],
+        "female"
+      ]
+    ],
+    [
+      {
+        "column": 1,
+        "value": 0.0494442005142516,
+        "name": "sd"
+      },
+      [
+        {
+          "column": 4,
+          "value": 0.16693333333333302,
+          "name": "Q75"
+        },
+        [
+          {
+            "column": 5,
+            "value": 0.0802570694087403,
+            "name": "IQR"
+          },
+          [
+            {
+              "column": 1,
+              "value": 0.07842657360827499,
+              "name": "sd"
+            },
+            [
+              {
+                "column": 3,
+                "value": 0.13032565528197,
+                "name": "Q25"
+              },
+              [
+                {
+                  "column": 3,
+                  "value": 0.0911094564408042,
+                  "name": "Q25"
+                },
+                [
+                  {
+                    "column": 3,
+                    "value": 0.115387797311272,
+                    "name": "Q25"
+                  },
+                  "male",
+                  "female"
+                ],
+                "male"
+              ],
+              "female"
+            ],
+            [
+              {
+                "column": 5,
+                "value": 0.0940458015267176,
+                "name": "IQR"
+              },
+              "male",
+              [
+                {
+                  "column": 5,
+                  "value": 0.0922769640479361,
+                  "name": "IQR"
+                },
+                "male",
+                "female"
+              ]
+            ]
+          ],
+          [
+            {
+              "column": 4,
+              "value": 0.24773662551440304,
+              "name": "Q75"
+            },
+            "female",
+            "male"
+          ]
+        ],
+        "female"
+      ],
+      "female"
+    ]
+  ],
+  [
+    {
+      "column": 3,
+      "value": 0.14028056112224402,
+      "name": "Q25"
+    },
+    [
+      {
+        "column": 3,
+        "value": 0.220671506352087,
+        "name": "Q25"
+      },
+      [
+        {
+          "column": 3,
+          "value": 0.221615271659325,
+          "name": "Q25"
+        },
+        "female",
+        "male"
+      ],
+      "female"
+    ],
+    [
+      {
+        "column": 4,
+        "value": 0.19536231884057997,
+        "name": "Q75"
+      },
+      "female",
+      "male"
+    ]
+  ]
+]

@@ -1,0 +1,593 @@
+[
+  {
+    "name": " height",
+    "column": 2,
+    "value": 0.4263477468714348
+  },
+  [
+    {
+      "name": " defence",
+      "column": 4,
+      "value": 144.50295881344394
+    },
+    [
+      {
+        "name": " height",
+        "column": 2,
+        "value": 2.30146749816564
+      },
+      " Lapras",
+      [
+        {
+          "name": " height",
+          "column": 2,
+          "value": 2.1361110608404488
+        },
+        [
+          {
+            "name": " defence",
+            "column": 4,
+            "value": 163.0190500489068
+          },
+          [
+            {
+              "name": " attack",
+              "column": 3,
+              "value": 205.04607144221632
+            },
+            [
+              {
+                "name": " defence",
+                "column": 4,
+                "value": 168.01770982148088
+              },
+              " Ponyta",
+              " Lapras"
+            ],
+            [
+              {
+                "name": " defence",
+                "column": 4,
+                "value": 186.268028635854
+              },
+              " Lapras",
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 197.80994149721764
+                },
+                " Lapras",
+                [
+                  {
+                    "name": " defence",
+                    "column": 4,
+                    "value": 170.53098389466632
+                  },
+                  " Ponyta",
+                  [
+                    {
+                      "name": " defence",
+                      "column": 4,
+                      "value": 167.02601995006722
+                    },
+                    " Lapras",
+                    " Ponyta"
+                  ]
+                ]
+              ]
+            ]
+          ],
+          " Ponyta"
+        ],
+        " Ponyta"
+      ]
+    ],
+    [
+      {
+        "name": " height",
+        "column": 2,
+        "value": 0.5799803977918148
+      },
+      [
+        {
+          "name": " attack",
+          "column": 3,
+          "value": 100.49103667322214
+        },
+        [
+          {
+            "name": " defence",
+            "column": 4,
+            "value": 121.94751913056068
+          },
+          " Vulpix",
+          [
+            {
+              "name": " defence",
+              "column": 4,
+              "value": 90.8585637968868
+            },
+            [
+              {
+                "name": " height",
+                "column": 2,
+                "value": 0.6904738663089988
+              },
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 102.6967298686354
+                },
+                " Glaceon",
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 102.4613371771686
+                  },
+                  " Zubat",
+                  [
+                    {
+                      "name": " height",
+                      "column": 2,
+                      "value": 0.7982447675183817
+                    },
+                    [
+                      {
+                        "name": " height",
+                        "column": 2,
+                        "value": 0.8041178218429189
+                      },
+                      " Glaceon",
+                      " Zubat"
+                    ],
+                    " Glaceon"
+                  ]
+                ]
+              ],
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 120.69708320467136
+                },
+                " Glaceon",
+                [
+                  {
+                    "name": " height",
+                    "column": 2,
+                    "value": 0.6732049618528858
+                  },
+                  [
+                    {
+                      "name": " defence",
+                      "column": 4,
+                      "value": 108.04815897065336
+                    },
+                    " Vulpix",
+                    " Glaceon"
+                  ],
+                  [
+                    {
+                      "name": " height",
+                      "column": 2,
+                      "value": 0.6560158092916668
+                    },
+                    " Glaceon",
+                    [
+                      {
+                        "name": " defence",
+                        "column": 4,
+                        "value": 117.47512910721262
+                      },
+                      " Glaceon",
+                      [
+                        {
+                          "name": " defence",
+                          "column": 4,
+                          "value": 103.68545210710076
+                        },
+                        [
+                          {
+                            "name": " attack",
+                            "column": 3,
+                            "value": 107.47379859403904
+                          },
+                          [
+                            {
+                              "name": " defence",
+                              "column": 4,
+                              "value": 112.23222507411148
+                            },
+                            [
+                              {
+                                "name": " defence",
+                                "column": 4,
+                                "value": 112.7832376078572
+                              },
+                              " Vulpix",
+                              " Glaceon"
+                            ],
+                            " Vulpix"
+                          ],
+                          [
+                            {
+                              "name": " defence",
+                              "column": 4,
+                              "value": 110.9634682546162
+                            },
+                            [
+                              {
+                                "name": " defence",
+                                "column": 4,
+                                "value": 113.76947937792887
+                              },
+                              " Glaceon",
+                              " Vulpix"
+                            ],
+                            " Glaceon"
+                          ]
+                        ],
+                        [
+                          {
+                            "name": " attack",
+                            "column": 3,
+                            "value": 111.16956028821248
+                          },
+                          [
+                            {
+                              "name": " attack",
+                              "column": 3,
+                              "value": 117.20532359274404
+                            },
+                            [
+                              {
+                                "name": " defence",
+                                "column": 4,
+                                "value": 102.963194126215
+                              },
+                              " Glaceon",
+                              " Vulpix"
+                            ],
+                            " Glaceon"
+                          ],
+                          " Zubat"
+                        ]
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 101.77059387967664
+              },
+              " Zubat",
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 101.3096788660474
+                },
+                " Glaceon",
+                " Zubat"
+              ]
+            ]
+          ]
+        ],
+        [
+          {
+            "name": " defence",
+            "column": 4,
+            "value": 101.65737445627148
+          },
+          [
+            {
+              "name": " height",
+              "column": 2,
+              "value": 0.7589953285093956
+            },
+            " Zubat",
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 90.48246902109952
+              },
+              " Vulpix",
+              " Zubat"
+            ]
+          ],
+          " Zubat"
+        ]
+      ],
+      [
+        {
+          "name": " defence",
+          "column": 4,
+          "value": 108.350726781151
+        },
+        " Vulpix",
+        [
+          {
+            "name": " defence",
+            "column": 4,
+            "value": 100.37349709425358
+          },
+          [
+            {
+              "name": " defence",
+              "column": 4,
+              "value": 102.24519199892195
+            },
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 118.59857355177876
+              },
+              " Vulpix",
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 104.5408647611443
+                },
+                " Meowth",
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 95.15173281116871
+                  },
+                  " Vulpix",
+                  " Meowth"
+                ]
+              ]
+            ],
+            " Vulpix"
+          ],
+          " Meowth"
+        ]
+      ]
+    ]
+  ],
+  [
+    {
+      "name": " defence",
+      "column": 4,
+      "value": 98.20611839777888
+    },
+    " Pidgey",
+    [
+      {
+        "name": " attack",
+        "column": 3,
+        "value": 78.60471538121176
+      },
+      [
+        {
+          "name": " defence",
+          "column": 4,
+          "value": 83.30387946708863
+        },
+        [
+          {
+            "name": " height",
+            "column": 2,
+            "value": 0.2689808662231838
+          },
+          [
+            {
+              "name": " defence",
+              "column": 4,
+              "value": 89.58005695355514
+            },
+            [
+              {
+                "name": " height",
+                "column": 2,
+                "value": 0.3423703884213619
+              },
+              [
+                {
+                  "name": " defence",
+                  "column": 4,
+                  "value": 97.49742551048767
+                },
+                " Rattata",
+                " Pidgey"
+              ],
+              [
+                {
+                  "name": " defence",
+                  "column": 4,
+                  "value": 97.678144995794
+                },
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 94.07289533404784
+                  },
+                  " Pidgey",
+                  " Rattata"
+                ],
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 84.45689864165759
+                  },
+                  " Rattata",
+                  [
+                    {
+                      "name": " attack",
+                      "column": 3,
+                      "value": 81.26680729658666
+                    },
+                    [
+                      {
+                        "name": " defence",
+                        "column": 4,
+                        "value": 93.00027428990286
+                      },
+                      " Pidgey",
+                      [
+                        {
+                          "name": " height",
+                          "column": 2,
+                          "value": 0.2930343998358719
+                        },
+                        " Rattata",
+                        " Pidgey"
+                      ]
+                    ],
+                    " Rattata"
+                  ]
+                ]
+              ]
+            ],
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 90.21286831054304
+              },
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 102.35169819593044
+                },
+                " Rattata",
+                [
+                  {
+                    "name": " height",
+                    "column": 2,
+                    "value": 0.2775107740839553
+                  },
+                  " Pidgey",
+                  " Rattata"
+                ]
+              ],
+              [
+                {
+                  "name": " defence",
+                  "column": 4,
+                  "value": 84.01388971900509
+                },
+                [
+                  {
+                    "name": " defence",
+                    "column": 4,
+                    "value": 89.56457854198985
+                  },
+                  " Pidgey",
+                  " Rattata"
+                ],
+                " Pidgey"
+              ]
+            ]
+          ],
+          [
+            {
+              "name": " height",
+              "column": 2,
+              "value": 0.2602371988985495
+            },
+            [
+              {
+                "name": " defence",
+                "column": 4,
+                "value": 89.06470932193025
+              },
+              " Pidgey",
+              [
+                {
+                  "name": " defence",
+                  "column": 4,
+                  "value": 88.59959000120617
+                },
+                " Rattata",
+                " Pidgey"
+              ]
+            ],
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 91.34270622945124
+              },
+              " Pidgey",
+              " Rattata"
+            ]
+          ]
+        ],
+        [
+          {
+            "name": " height",
+            "column": 2,
+            "value": 0.2572371354080282
+          },
+          [
+            {
+              "name": " height",
+              "column": 2,
+              "value": 0.3009661541309533
+            },
+            " Rattata",
+            [
+              {
+                "name": " height",
+                "column": 2,
+                "value": 0.2864091695724085
+              },
+              [
+                {
+                  "name": " height",
+                  "column": 2,
+                  "value": 0.2879661195921454
+                },
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 88.88952903443895
+                  },
+                  " Rattata",
+                  " Pidgey"
+                ],
+                " Pidgey"
+              ],
+              [
+                {
+                  "name": " height",
+                  "column": 2,
+                  "value": 0.2606995262185165
+                },
+                " Rattata",
+                [
+                  {
+                    "name": " height",
+                    "column": 2,
+                    "value": 0.2601537897793429
+                  },
+                  " Pidgey",
+                  " Rattata"
+                ]
+              ]
+            ]
+          ],
+          " Pidgey"
+        ]
+      ],
+      " Pidgey"
+    ]
+  ]
+]

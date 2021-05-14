@@ -1,0 +1,105 @@
+[
+  {
+    "value": 0.0675797872340426,
+    "name": "IQR",
+    "column": 5
+  },
+  [
+    {
+      "value": 0.517920773396756,
+      "name": "sfm",
+      "column": 9
+    },
+    [
+      {
+        "value": 0.0881912681912682,
+        "name": "IQR",
+        "column": 5
+      },
+      [
+        {
+          "value": 0.150479394449117,
+          "name": "IQR",
+          "column": 5
+        },
+        "female",
+        [
+          {
+            "value": 0.312599681020734,
+            "name": "modindx",
+            "column": 19
+          },
+          [
+            {
+              "value": 6.9921875,
+              "name": "dfrange",
+              "column": 18
+            },
+            "male",
+            "female"
+          ],
+          [
+            {
+              "value": 9.5859375,
+              "name": "maxdom",
+              "column": 17
+            },
+            "female",
+            [
+              {
+                "value": 3.0853249689771403,
+                "name": "skew",
+                "column": 6
+              },
+              [
+                {
+                  "value": 0.703125,
+                  "name": "dfrange",
+                  "column": 18
+                },
+                "female",
+                "male"
+              ],
+              [
+                {
+                  "value": 0.259358974358974,
+                  "name": "mode",
+                  "column": 10
+                },
+                [
+                  {
+                    "value": 0.18485308543997697,
+                    "name": "centroid",
+                    "column": 11
+                  },
+                  "female",
+                  "male"
+                ],
+                "male"
+              ]
+            ]
+          ]
+        ]
+      ],
+      "female"
+    ],
+    [
+      {
+        "value": 0.0503923187119857,
+        "name": "sd",
+        "column": 1
+      },
+      "male",
+      [
+        {
+          "value": 0.15692545384318302,
+          "name": "Q25",
+          "column": 3
+        },
+        "male",
+        "female"
+      ]
+    ]
+  ],
+  "female"
+]

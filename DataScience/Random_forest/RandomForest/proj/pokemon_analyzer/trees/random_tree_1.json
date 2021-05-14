@@ -1,0 +1,321 @@
+[
+  {
+    "column": 2,
+    "value": 0.4285329637767691,
+    "name": " height"
+  },
+  [
+    {
+      "column": 2,
+      "value": 1.7637662330727844,
+      "name": " height"
+    },
+    [
+      {
+        "column": 2,
+        "value": 2.279276985544692,
+        "name": " height"
+      },
+      " Lapras",
+      [
+        {
+          "column": 2,
+          "value": 2.279276985544692,
+          "name": " height"
+        },
+        [
+          {
+            "column": 2,
+            "value": 2.293861435122608,
+            "name": " height"
+          },
+          " Ponyta",
+          " Lapras"
+        ],
+        " Ponyta"
+      ]
+    ],
+    [
+      {
+        "column": 2,
+        "value": 0.6242442252285705,
+        "name": " height"
+      },
+      [
+        {
+          "column": 2,
+          "value": 0.6322114053917877,
+          "name": " height"
+        },
+        [
+          {
+            "column": 2,
+            "value": 0.6605664721163246,
+            "name": " height"
+          },
+          [
+            {
+              "column": 2,
+              "value": 0.6695486772450228,
+              "name": " height"
+            },
+            [
+              {
+                "column": 2,
+                "value": 0.6902860577897725,
+                "name": " height"
+              },
+              [
+                {
+                  "column": 2,
+                  "value": 0.7079953348661169,
+                  "name": " height"
+                },
+                [
+                  {
+                    "column": 2,
+                    "value": 0.7238600947504731,
+                    "name": " height"
+                  },
+                  [
+                    {
+                      "column": 2,
+                      "value": 0.7275303580155961,
+                      "name": " height"
+                    },
+                    [
+                      {
+                        "column": 2,
+                        "value": 0.7311113059379829,
+                        "name": " height"
+                      },
+                      [
+                        {
+                          "column": 2,
+                          "value": 0.7322669018627271,
+                          "name": " height"
+                        },
+                        [
+                          {
+                            "column": 2,
+                            "value": 0.7572340301786099,
+                            "name": " height"
+                          },
+                          [
+                            {
+                              "column": 2,
+                              "value": 0.7697517642959781,
+                              "name": " height"
+                            },
+                            [
+                              {
+                                "column": 2,
+                                "value": 0.7826942578657092,
+                                "name": " height"
+                              },
+                              [
+                                {
+                                  "column": 2,
+                                  "value": 0.8006743281380814,
+                                  "name": " height"
+                                },
+                                " Glaceon",
+                                " Zubat"
+                              ],
+                              " Glaceon"
+                            ],
+                            " Zubat"
+                          ],
+                          " Glaceon"
+                        ],
+                        " Zubat"
+                      ],
+                      " Glaceon"
+                    ],
+                    " Zubat"
+                  ],
+                  " Glaceon"
+                ],
+                " Zubat"
+              ],
+              " Glaceon"
+            ],
+            " Zubat"
+          ],
+          " Glaceon"
+        ],
+        [
+          {
+            "column": 2,
+            "value": 0.6292145512777876,
+            "name": " height"
+          },
+          " Vulpix",
+          " Glaceon"
+        ]
+      ],
+      [
+        {
+          "column": 2,
+          "value": 0.595926108109316,
+          "name": " height"
+        },
+        [
+          {
+            "column": 2,
+            "value": 0.6160119895091606,
+            "name": " height"
+          },
+          " Zubat",
+          [
+            {
+              "column": 2,
+              "value": 0.6085207858569827,
+              "name": " height"
+            },
+            " Vulpix",
+            " Zubat"
+          ]
+        ],
+        [
+          {
+            "column": 2,
+            "value": 0.5169881110507076,
+            "name": " height"
+          },
+          [
+            {
+              "column": 2,
+              "value": 0.5531661777009094,
+              "name": " height"
+            },
+            [
+              {
+                "column": 2,
+                "value": 0.5869949415828773,
+                "name": " height"
+              },
+              " Vulpix",
+              " Meowth"
+            ],
+            " Vulpix"
+          ],
+          " Meowth"
+        ]
+      ]
+    ]
+  ],
+  [
+    {
+      "column": 2,
+      "value": 0.28501106967236106,
+      "name": " height"
+    },
+    [
+      {
+        "column": 2,
+        "value": 0.3374605986639757,
+        "name": " height"
+      },
+      " Rattata",
+      [
+        {
+          "column": 2,
+          "value": 0.2929994814313987,
+          "name": " height"
+        },
+        [
+          {
+            "column": 2,
+            "value": 0.29536214349372386,
+            "name": " height"
+          },
+          [
+            {
+              "column": 2,
+              "value": 0.3145817845471318,
+              "name": " height"
+            },
+            [
+              {
+                "column": 2,
+                "value": 0.319760872130033,
+                "name": " height"
+              },
+              [
+                {
+                  "column": 2,
+                  "value": 0.32112814170999243,
+                  "name": " height"
+                },
+                [
+                  {
+                    "column": 2,
+                    "value": 0.3249173817202848,
+                    "name": " height"
+                  },
+                  " Pidgey",
+                  " Rattata"
+                ],
+                " Pidgey"
+              ],
+              " Rattata"
+            ],
+            " Pidgey"
+          ],
+          " Rattata"
+        ],
+        " Pidgey"
+      ]
+    ],
+    [
+      {
+        "column": 2,
+        "value": 0.270291634553821,
+        "name": " height"
+      },
+      " Rattata",
+      [
+        {
+          "column": 2,
+          "value": 0.2673613314266656,
+          "name": " height"
+        },
+        " Pidgey",
+        [
+          {
+            "column": 2,
+            "value": 0.2611867744111737,
+            "name": " height"
+          },
+          [
+            {
+              "column": 2,
+              "value": 0.2639500174437469,
+              "name": " height"
+            },
+            [
+              {
+                "column": 2,
+                "value": 0.2651534923839379,
+                "name": " height"
+              },
+              [
+                {
+                  "column": 2,
+                  "value": 0.2664439262439848,
+                  "name": " height"
+                },
+                " Rattata",
+                " Pidgey"
+              ],
+              " Rattata"
+            ],
+            " Pidgey"
+          ],
+          " Rattata"
+        ]
+      ]
+    ]
+  ]
+]

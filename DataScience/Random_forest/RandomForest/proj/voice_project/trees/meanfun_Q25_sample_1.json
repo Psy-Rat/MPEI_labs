@@ -1,0 +1,105 @@
+[
+  {
+    "column": 12,
+    "value": 0.138873911809633,
+    "name": "meanfun"
+  },
+  [
+    {
+      "column": 12,
+      "value": 0.151515370557939,
+      "name": "meanfun"
+    },
+    [
+      {
+        "column": 12,
+        "value": 0.160404943565888,
+        "name": "meanfun"
+      },
+      "female",
+      [
+        {
+          "column": 12,
+          "value": 0.159106930950445,
+          "name": "meanfun"
+        },
+        "male",
+        "female"
+      ]
+    ],
+    [
+      {
+        "column": 3,
+        "value": 0.14223701731025304,
+        "name": "Q25"
+      },
+      [
+        {
+          "column": 12,
+          "value": 0.149085989249893,
+          "name": "meanfun"
+        },
+        [
+          {
+            "column": 12,
+            "value": 0.14930631332907002,
+            "name": "meanfun"
+          },
+          "female",
+          "male"
+        ],
+        "female"
+      ],
+      [
+        {
+          "column": 3,
+          "value": 0.136111111111111,
+          "name": "Q25"
+        },
+        "male",
+        "female"
+      ]
+    ]
+  ],
+  [
+    {
+      "column": 3,
+      "value": 0.145925925925926,
+      "name": "Q25"
+    },
+    [
+      {
+        "column": 3,
+        "value": 0.14642962962963,
+        "name": "Q25"
+      },
+      [
+        {
+          "column": 12,
+          "value": 0.130560651404591,
+          "name": "meanfun"
+        },
+        [
+          {
+            "column": 3,
+            "value": 0.147458143074581,
+            "name": "Q25"
+          },
+          [
+            {
+              "column": 3,
+              "value": 0.220671506352087,
+              "name": "Q25"
+            },
+            "male",
+            "female"
+          ],
+          "male"
+        ],
+        "male"
+      ],
+      "female"
+    ],
+    "male"
+  ]
+]
