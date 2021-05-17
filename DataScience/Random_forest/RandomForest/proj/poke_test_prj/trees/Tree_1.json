@@ -1,0 +1,329 @@
+[
+  {
+    "name": "type",
+    "column": 0,
+    "value": "ice"
+  },
+  [
+    {
+      "name": " attack",
+      "column": 3,
+      "value": 164.01297331556927
+    },
+    " Lapras",
+    " Glaceon"
+  ],
+  [
+    {
+      "name": "type",
+      "column": 0,
+      "value": "normal"
+    },
+    [
+      {
+        "name": " attack",
+        "column": 3,
+        "value": 111.2118447851164
+      },
+      " Meowth",
+      [
+        {
+          "name": " attack",
+          "column": 3,
+          "value": 88.66451586526182
+        },
+        [
+          {
+            "name": " attack",
+            "column": 3,
+            "value": 89.55528257482015
+          },
+          [
+            {
+              "name": " attack",
+              "column": 3,
+              "value": 94.72907329819016
+            },
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 94.73523487472816
+              },
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 99.40238985492296
+                },
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 101.87154664573518
+                  },
+                  [
+                    {
+                      "name": " attack",
+                      "column": 3,
+                      "value": 104.41015279111316
+                    },
+                    " Rattata",
+                    [
+                      {
+                        "name": " attack",
+                        "column": 3,
+                        "value": 103.93480908631398
+                      },
+                      " Meowth",
+                      " Rattata"
+                    ]
+                  ],
+                  " Meowth"
+                ],
+                " Rattata"
+              ],
+              " Meowth"
+            ],
+            " Rattata"
+          ],
+          [
+            {
+              "name": " attack",
+              "column": 3,
+              "value": 89.00082578927754
+            },
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 89.34734962329864
+              },
+              " Meowth",
+              " Rattata"
+            ],
+            " Meowth"
+          ]
+        ],
+        " Rattata"
+      ]
+    ],
+    [
+      {
+        "name": "type",
+        "column": 0,
+        "value": "fire"
+      },
+      [
+        {
+          "name": " attack",
+          "column": 3,
+          "value": 171.81640105790555
+        },
+        " Ponyta",
+        " Vulpix"
+      ],
+      [
+        {
+          "name": " attack",
+          "column": 3,
+          "value": 92.54622901512629
+        },
+        [
+          {
+            "name": " attack",
+            "column": 3,
+            "value": 94.94792905453836
+          },
+          [
+            {
+              "name": " attack",
+              "column": 3,
+              "value": 102.0511811151947
+            },
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 102.42430990400428
+              },
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 103.47929287124212
+                },
+                " Pidgey",
+                " Zubat"
+              ],
+              " Pidgey"
+            ],
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 101.77758173811476
+              },
+              " Zubat",
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 96.49871766186445
+                },
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 101.3425697995387
+                  },
+                  " Pidgey",
+                  [
+                    {
+                      "name": " attack",
+                      "column": 3,
+                      "value": 97.11352233208665
+                    },
+                    [
+                      {
+                        "name": " attack",
+                        "column": 3,
+                        "value": 97.25315259042566
+                      },
+                      [
+                        {
+                          "name": " attack",
+                          "column": 3,
+                          "value": 99.01454055085328
+                        },
+                        [
+                          {
+                            "name": " attack",
+                            "column": 3,
+                            "value": 99.20863290795924
+                          },
+                          " Zubat",
+                          " Pidgey"
+                        ],
+                        " Zubat"
+                      ],
+                      " Pidgey"
+                    ],
+                    " Zubat"
+                  ]
+                ],
+                " Pidgey"
+              ]
+            ]
+          ],
+          " Zubat"
+        ],
+        [
+          {
+            "name": " attack",
+            "column": 3,
+            "value": 84.71982768961654
+          },
+          [
+            {
+              "name": " attack",
+              "column": 3,
+              "value": 86.59694567916058
+            },
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 89.50008028882418
+              },
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 92.04955335610002
+                },
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 92.4765588341134
+                  },
+                  " Pidgey",
+                  " Zubat"
+                ],
+                " Pidgey"
+              ],
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 87.6514576068756
+                },
+                " Zubat",
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 86.91899562366551
+                  },
+                  " Pidgey",
+                  " Zubat"
+                ]
+              ]
+            ],
+            " Pidgey"
+          ],
+          [
+            {
+              "name": " attack",
+              "column": 3,
+              "value": 80.37732731532769
+            },
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 82.19947844727487
+              },
+              " Zubat",
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 81.21031527797322
+                },
+                " Pidgey",
+                " Zubat"
+              ]
+            ],
+            [
+              {
+                "name": " attack",
+                "column": 3,
+                "value": 76.91727482751394
+              },
+              [
+                {
+                  "name": " attack",
+                  "column": 3,
+                  "value": 79.51245437155632
+                },
+                [
+                  {
+                    "name": " attack",
+                    "column": 3,
+                    "value": 80.13128168127464
+                  },
+                  " Pidgey",
+                  " Zubat"
+                ],
+                " Pidgey"
+              ],
+              " Zubat"
+            ]
+          ]
+        ]
+      ]
+    ]
+  ]
+]

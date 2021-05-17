@@ -1,0 +1,8 @@
+[
+  "poke_test_prj",
+  "/database/poke_test_prj.csv",
+  [
+    "/trees/Tree_1.json",
+    "/trees/Tree_2.json"
+  ]
+]

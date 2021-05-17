@@ -15,10 +15,8 @@ import DecisionTree as dt
 import matplotlib.pyplot as plt
 import pandas as pd
 import math
-import itertools
 
 sys.setrecursionlimit(1000000)
-
 
 
 def getName(fileName):
@@ -32,6 +30,7 @@ def getName(fileName):
 
     return dbname
 
+
 class Ui_WidgetTree(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
@@ -41,7 +40,8 @@ class Ui_WidgetTree(QtWidgets.QWidget):
         self.horizontalLayoutWidget = QtWidgets.QWidget()
         self.horizontalLayoutWidget.setGeometry(QtCore.QRect(1, 9, 401, 61))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout = QtWidgets.QHBoxLayout(
+            self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(11, 11, 11, 11)
         self.horizontalLayout.setSpacing(6)
         self.horizontalLayout.setObjectName("horizontalLayout")
@@ -56,7 +56,8 @@ class Ui_WidgetTree(QtWidgets.QWidget):
         self.btn_ShowTree.setFocusPolicy(QtCore.Qt.NoFocus)
         self.btn_ShowTree.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("../see.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("../see.ico"),
+                       QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_ShowTree.setIcon(icon)
         self.btn_ShowTree.setObjectName("btn_ShowTree")
         self.horizontalLayout.addWidget(self.btn_ShowTree)
@@ -66,6 +67,7 @@ class Ui_WidgetTree(QtWidgets.QWidget):
     def retranslateUi(self):
         _translate = QtCore.QCoreApplication.translate
         self.cb_selected.setText(_translate("WidgetTree", "CheckBox"))
+
 
 class WidgetTree(QtWidgets.QWidget):
     def __init__(self, TreePath):
@@ -86,10 +88,10 @@ class WidgetTree(QtWidgets.QWidget):
         self.cb_select.setText(' ')
 
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("see.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("see.ico"),
+                       QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.btn_show = QtWidgets.QPushButton(self.frame)
         self.btn_show.setIcon(icon)
-
 
         self.boxx = QtWidgets.QHBoxLayout(self.frame)
         self.boxx.addWidget(self.lEditName)
@@ -110,10 +112,12 @@ class WidgetTree(QtWidgets.QWidget):
     def get_tree(self):
         return dt.DecisionTree.createFromFile(self.path)
 
-#Класс проекта
+# Класс проекта
+
+
 class TProject():
-    #Создание проекта
-    def __init__(self, aName, aMainDir, database, trees = []):
+    # Создание проекта
+    def __init__(self, aName, aMainDir, database, trees=[]):
 
         self.name = aName
         self.trees = trees
@@ -128,13 +132,13 @@ class TProject():
         if (not os.path.isdir(self.database_dir)):
             os.mkdir(self.database_dir)
 
-        self.database = self.database_dir +  self.name + '.csv'
+        self.database = self.database_dir + self.name + '.csv'
         if(not os.path.isfile(self.database)):
             shutil.copyfile(database, self.database)
 
         self.save_project()
 
-    #Загрузка проекта
+    # Загрузка проекта
     @classmethod
     def load_project(cls, filename):
         jsn = []
@@ -156,38 +160,40 @@ class TProject():
         for path in jsn[2]:
             vTrees.append(vMainDir + path)
 
-
         return cls(vName, vMainDir, vDatabase, vTrees)
 
-    #Сохранение проекта
+    # Сохранение проекта
     def save_project(self):
         relative_db = self.database[len(self.dir):]
         relative_trees = []
         for path in self.trees:
             relative_trees.append(path[len(self.dir):])
         with open(self.dir + '/' + self.name + '.json', 'w') as openfile:
-            json.dump([self.name, relative_db, relative_trees], openfile, indent=2, separators=(',', ': '))
+            json.dump([self.name, relative_db, relative_trees],
+                      openfile, indent=2, separators=(',', ': '))
 
-    #Создание нового дерева
+    # Создание нового дерева
     def add_tree(self, name, begin, end, labels=None):
 
         print("new tree created")
-        #Читаем базу проекта и выделяем пул и классы
+        # Читаем базу проекта и выделяем пул и классы
         fixed_df = pd.read_csv(self.database)
-        tree_pool, labels, translations = dt.bagging(fixed_df, end, begin, labels)
+        tree_pool, labels, translations = dt.bagging(
+            fixed_df, end, begin, labels)
 
-        #Создаём класс даты
+        # Создаём класс даты
         checkingData = dt.DataWorks(tree_pool, labels, translations)
 
-        #Создаём и сохраняем дерево
-        tree = dt.DecisionTree.createFromData(checkingData)#DecisionTree(checkingData)
+        # Создаём и сохраняем дерево
+        tree = dt.DecisionTree.createFromData(
+            checkingData)  # DecisionTree(checkingData)
         tree.drawTree()
         tree.saveTree(self.trees_dir + name + '.json')
         self.trees.append(self.trees_dir + name + '.json')
 
         self.save_project()
 
-        #возвращаем список деревьев
+        # возвращаем список деревьев
         return self.trees
 
 
@@ -247,7 +253,8 @@ class Ui_MainWindow(object):
         self.btn_chooseall.setGeometry(QtCore.QRect(560, 380, 31, 23))
 
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("chooseall.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("chooseall.ico"),
+                       QtGui.QIcon.Normal, QtGui.QIcon.Off)
 
         self.btn_chooseall.setIcon(icon)
         self.btn_chooseall.setObjectName("btn_chooseall")
@@ -277,7 +284,7 @@ class Ui_MainWindow(object):
         self.hslider_samplesize.setObjectName("hslider_samplesize")
         self.hslider_samplesize.setRange(0, 100)
         self.hslider_samplesize.setValue(10)
-#---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
 # 'Scroll area for attributes'
         self.scrollArea_attr = QtWidgets.QScrollArea(self.frame)
         self.scrollArea_attr.setGeometry(QtCore.QRect(10, 160, 260, 121))
@@ -285,10 +292,13 @@ class Ui_MainWindow(object):
         self.scrollArea_attr.setObjectName("scrollArea_attr")
 
         self.scrollAreaWidgetContents_attr = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_attr.setGeometry(QtCore.QRect(0, 0, 260, 120))
-        self.scrollAreaWidgetContents_attr.setObjectName("scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents_attr.setGeometry(
+            QtCore.QRect(0, 0, 260, 120))
+        self.scrollAreaWidgetContents_attr.setObjectName(
+            "scrollAreaWidgetContents")
 
-        self.gridLayout_attr = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_attr)
+        self.gridLayout_attr = QtWidgets.QGridLayout(
+            self.scrollAreaWidgetContents_attr)
         self.gridLayout_attr.setContentsMargins(0, 0, 11, 11)
         self.gridLayout_attr.setSpacing(6)
         self.gridLayout_attr.setObjectName("gridLayout_attr")
@@ -335,10 +345,12 @@ class Ui_MainWindow(object):
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
         self.menuBar.setGeometry(QtCore.QRect(0, 0, 609, 18))
 
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Maximum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Maximum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.menuBar.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.menuBar.sizePolicy().hasHeightForWidth())
 
         self.menuBar.setSizePolicy(sizePolicy)
         self.menuBar.setObjectName("menuBar")
@@ -351,9 +363,9 @@ class Ui_MainWindow(object):
         MainWindow.setMenuBar(self.menuBar)
 
         #self.statusBar = QtWidgets.QStatusBar(MainWindow)
-        #self.statusBar.setObjectName("statusBar")
+        # self.statusBar.setObjectName("statusBar")
 
-        #MainWindow.setStatusBar(self.statusBar)
+        # MainWindow.setStatusBar(self.statusBar)
 
         self.act_New = QtWidgets.QAction(MainWindow)
         self.act_New.setObjectName("act_New")
@@ -374,8 +386,6 @@ class Ui_MainWindow(object):
         self.menuHelp.addAction(self.act_Help)
         self.menuBar.addAction(self.menuFile.menuAction())
         self.menuBar.addAction(self.menuHelp.menuAction())
-
-
 
         self.projDir = os.getcwd() + '/proj/'
         self.dataDir = os.getcwd() + '/database/'
@@ -407,13 +417,17 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Random forest research project"))
+        MainWindow.setWindowTitle(_translate(
+            "MainWindow", "Random forest research project"))
         self.lbl_name.setText(_translate("MainWindow", "Имя проекта"))
         self.lbl_database.setText(_translate("MainWindow", "База данных"))
-        self.btn_test.setText(_translate("MainWindow", "Тестировать выбранные деревья"))
-        self.btn_compare.setText(_translate("MainWindow", "Сравнить выбранные деревья"))
+        self.btn_test.setText(_translate(
+            "MainWindow", "Тестировать выбранные деревья"))
+        self.btn_compare.setText(_translate(
+            "MainWindow", "Сравнить выбранные деревья"))
         self.btn_Tree.setText(_translate("MainWindow", "Добавить дерево"))
-        self.lbl_samplesize.setText(_translate("MainWindow", "Максимальный размер сэмпла:"))
+        self.lbl_samplesize.setText(_translate(
+            "MainWindow", "Максимальный размер сэмпла:"))
         self.cb_solid.setText(_translate("MainWindow", " Случайный сэмпл"))
         self.lbl_TreeName.setText(_translate("MainWindow", "Имя дерева"))
         self.menuFile.setTitle(_translate("MainWindow", "Файл"))
@@ -426,7 +440,8 @@ class Ui_MainWindow(object):
         self.act_Save.setShortcut(_translate("MainWindow", "Ctrl+S"))
         self.act_Help.setText(_translate("MainWindow", "Справка"))
         self.act_Help.setShortcut(_translate("MainWindow", "Ctrl+H"))
-        self.cb_randomize_attr.setText(_translate("cb_randomize_attr", "Случайные аттрибуты"))
+        self.cb_randomize_attr.setText(_translate(
+            "cb_randomize_attr", "Случайные аттрибуты"))
 
     def create_project(self):
         proj_path = ""      # Путь к проекту
@@ -437,7 +452,8 @@ class Ui_MainWindow(object):
 
         # Чтобы нельзя было создать проект с одинаковым названием
         while f_exists:
-            text, ok = QtWidgets.QInputDialog.getText(None, 'Новый проект', 'Введите имя проекта:')
+            text, ok = QtWidgets.QInputDialog.getText(
+                None, 'Новый проект', 'Введите имя проекта:')
             if (not ok):
                 return
             proj_path = str(self.projDir + text)
@@ -457,25 +473,25 @@ class Ui_MainWindow(object):
         self.clear_scroll()
 
         # Берём путь к базе данных для переноса её в папку проекта
-        fileName,_ = QtWidgets.QFileDialog.getOpenFileName(FileWid, caption="Откройте базу данных",  filter="Data Base (*.csv)")
+        fileName, _ = QtWidgets.QFileDialog.getOpenFileName(
+            FileWid, caption="Откройте базу данных",  filter="Data Base (*.csv)")
         if len(fileName) is 0:
             return
 
         stPoint = 0
         print((str(fileName).find('/', stPoint)))
-        while((str(fileName).find('/', stPoint))>0):
+        while((str(fileName).find('/', stPoint)) > 0):
             stPoint = (str(fileName).find('/', stPoint))+1
 
         dbname = str(fileName)[stPoint:]
-        dbname = dbname[:dbname.find('.',0)]
+        dbname = dbname[:dbname.find('.', 0)]
 
         newprojDir = self.projDir + text
-        #Создаём проект и устанавливаем currProject для редактирования
+        # Создаём проект и устанавливаем currProject для редактирования
         self.currProject = TProject(text, newprojDir, fileName)
 
         self.lEdit_database.setText(getName(fileName))
         self.lEdit_name.setText(text)
-
 
         fixed_df = pd.read_csv(self.currProject.database)
         names = fixed_df.columns.values.tolist()[:-1]
@@ -497,17 +513,15 @@ class Ui_MainWindow(object):
         self.lEdit_database.setText(getName(self.currProject.database))
         self.lEdit_name.setText(self.currProject.name)
 
-
         fixed_df = pd.read_csv(self.currProject.database)
         names = fixed_df.columns.values.tolist()[:-1]
         self.refresh_attr(names)
         self.set_attr_avalible()
 
-
         # Зачищаем скролл
         self.clear_scroll()
 
-        #Восстанавливаем деревья
+        # Восстанавливаем деревья
         trees = self.currProject.trees
         for path in trees:
             treeWidget = WidgetTree(path)
@@ -531,7 +545,7 @@ class Ui_MainWindow(object):
         self.attr_cb.clear()
 
         for name in a_names:
-            at_cb= QtWidgets.QCheckBox(self.centralWidget)
+            at_cb = QtWidgets.QCheckBox(self.centralWidget)
             at_cb.setGeometry(QtCore.QRect(0, 0, 150, 23))
             at_cb.setChecked(True)
             at_cb.setText(name)
@@ -544,7 +558,7 @@ class Ui_MainWindow(object):
         self.tree_widgets.clear()
 
     def add_tree(self):
-        #Если открыт проект, то добавляем дерево
+        # Если открыт проект, то добавляем дерево
         if self.currProject is None:
             return
         name = self.lEdit_TreeName.text()
@@ -573,12 +587,11 @@ class Ui_MainWindow(object):
         trees = self.currProject.add_tree(name, begin, end, labels)
 
         map = []
-        for i in  self.tree_widgets:
+        for i in self.tree_widgets:
             print(i.cb_select.isChecked())
             map.append(i.cb_select.isChecked())
-        #Зачищаем скролл
+        # Зачищаем скролл
         self.clear_scroll()
-
 
         for path in trees:
             treeWidget = WidgetTree(path)
@@ -588,7 +601,7 @@ class Ui_MainWindow(object):
         for i in range(min(len(self.tree_widgets), len(map))):
             self.tree_widgets[i].cb_select.setChecked(map[i])
 
-    def test_trees(self, trees = None, show = True):
+    def test_trees(self, trees=None, show=True):
         if(not self.currProject):
             msg = QtWidgets.QMessageBox(None)
             msg.setWindowTitle("Ошибка")
@@ -611,7 +624,7 @@ class Ui_MainWindow(object):
 
         if(not trees):
             trees = []
-            for i in  self.tree_widgets:
+            for i in self.tree_widgets:
                 if (i.cb_select.isChecked()):
                     trees.append(i.get_tree())
 
@@ -628,29 +641,29 @@ class Ui_MainWindow(object):
                 answer = str(tree.findAnswer(dataRow))
                 label = str(dataRow[-1])
                 if answer == label:
-                    ansv+=1
+                    ansv += 1
             if ansv >= math.ceil(len(trees) / 2):
-                correct+=1
+                correct += 1
             else:
-                wrong+=1
+                wrong += 1
 
         if(show):
             msg = QtWidgets.QMessageBox(None)
-            msg.setText("Выбрано: " + str(len(trees)) +" деревьев\n" +
-                    "========================================\n" +
-                    "Правильных ответов: " + str(correct) + "\n" +
-                    "Неправильных ответов: " + str(wrong) + "\n"+
-                    "========================================\n" +
-                    "[" + str(correct) + " | " + str(wrong) + "] }-" + str(len(fixed_df)) + "\n" +
-                    "========================================\n" +
-                    "Точность: " + str(math.floor((correct/len(fixed_df))*100)) + " % ")
+            msg.setText("Выбрано: " + str(len(trees)) + " деревьев\n" +
+                        "========================================\n" +
+                        "Правильных ответов: " + str(correct) + "\n" +
+                        "Неправильных ответов: " + str(wrong) + "\n" +
+                        "========================================\n" +
+                        "[" + str(correct) + " | " + str(wrong) + "] }-" + str(len(fixed_df)) + "\n" +
+                        "========================================\n" +
+                        "Точность: " + str(math.floor((correct/len(fixed_df))*100)) + " % ")
 
             msg.exec()
 
         return(math.floor((correct/len(fixed_df))*100))
 
     def check_all(self):
-        for i in  self.tree_widgets:
+        for i in self.tree_widgets:
             i.cb_select.setChecked(True)
 
     def check_all_attr(self):
@@ -659,7 +672,7 @@ class Ui_MainWindow(object):
             if(i.isChecked()):
                 setter = False
                 break
-        for i in  self.attr_cb:
+        for i in self.attr_cb:
             i.setChecked(setter)
 
     def set_attr_avalible(self):
@@ -690,7 +703,7 @@ class Ui_MainWindow(object):
         for tree in trees:
             accuracy.append(self.test_trees(tree, False))
 
-        #plt.ylabel('Scores')
+        # plt.ylabel('Scores')
         #plt.title('Scores by group and gender')
         plt.figure(1, figsize=(9, 3))
         ax1 = plt.subplot(111)
@@ -701,14 +714,14 @@ class Ui_MainWindow(object):
 
         return
 
-if __name__ == "__main__":
-    import sys
 
-    QtWidgets.QApplication.setStyle(QtWidgets.QStyleFactory.create('Cleanlooks'))
+if __name__ == "__main__":
+
+    QtWidgets.QApplication.setStyle(
+        QtWidgets.QStyleFactory.create('Cleanlooks'))
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = QtWidgets.QMainWindow()
     ui = Ui_MainWindow()
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-

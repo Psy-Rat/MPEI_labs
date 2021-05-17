@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import random as rnd
-import pandas as pd
 import matplotlib.pyplot as plt
 import json
 import sys
@@ -16,7 +15,7 @@ def draw_text(ax, x, y, t, size=20, **kwargs):
 
 
 # 'gini`s impurity'
-def gini_impurity( aClasslist ):
+def gini_impurity(aClasslist):
     """Main entropy characteristic
     Gini impurity is a measure of how often a randomly chosen element from the set would be incorrectly labeled if
     was randomly labeled according to the distribution of labels in the subset
@@ -25,7 +24,7 @@ def gini_impurity( aClasslist ):
     for classy in aClasslist:
         if classy not in class_map:
             class_map[classy] = 0
-        class_map[classy]+=1
+        class_map[classy] += 1
     entropy = 1
     for lbl in class_map:
         entropy -= (class_map[lbl] / float(len(aClasslist)))**2
@@ -34,7 +33,7 @@ def gini_impurity( aClasslist ):
 
 # 'bagging from CSV data file'
 # 'Attention! Class/Label parameter must be in the last column!'
-def bagging(aCSVData, b_perc = 0.3, a_perc = 0.1, labels = None):
+def bagging(aCSVData, b_perc=0.3, a_perc=0.1, labels=None):
     a = round(len(aCSVData) * a_perc)
     b = round(len(aCSVData) * b_perc)
     col_names = aCSVData.columns.values.tolist()
@@ -65,7 +64,7 @@ class Question:
         self.column = a_column
         self.value = a_value
         self.name = ""
-    
+
     # 'Label setter'
     def set_label(self, a_name):
         self.name = a_name
@@ -73,7 +72,7 @@ class Question:
     # 'Print method override'
     def __repr__(self):
         return self.question_text()
-    
+
     # 'For textual quesition representation (For printing)'
     def question_text(self):
         if self.is_number(self.value):
@@ -90,7 +89,7 @@ class Question:
         return isinstance(a_instance, int) or isinstance(a_instance, float)
 
     # 'You got a question? This gives an answer'
-    def compare(self, aExample, transliteration = None):
+    def compare(self, aExample, transliteration=None):
         if transliteration is None:
             buffValue = aExample[self.column]
         else:
@@ -117,7 +116,7 @@ class DataWorks:
             result[row[-1]] += 1
         return result
 
-    #return list of existing unique classes
+    # return list of existing unique classes
     def getClasses(self):
         classlist = []
         for row in self.data:
@@ -125,14 +124,14 @@ class DataWorks:
                 classlist.append(row[-1])
         return classlist
 
-    #return list of labels
+    # return list of labels
     def getLabelField(self):
         classlist = []
         for row in self.data:
             classlist.append(row[-1])
         return classlist
 
-    #get gini impurity
+    # get gini impurity
     def getGini(self):
         return gini_impurity(self.getLabelField())
 
@@ -147,13 +146,12 @@ class DataWorks:
 
         return DataWorks(left, self.labels, self.translations), DataWorks(right, self.labels, self.translations)
 
-
     def questionProfits(self, aQuestion):
         left_split, right_split = self.splitData(aQuestion)
         return (self.getGini()
                 - left_split.getGini()*(len(left_split.data)/len(self.data))
                 - right_split.getGini()*(len(right_split.data)/len(self.data))
-               )
+                )
 
     # finding best choice
     def getBestQuestion(self):
@@ -179,7 +177,6 @@ class DecisionNode:
         self.left = aLeft
         self.right = aRight
 
-
     @classmethod
     def createFromData(cls, aQuestion, aLeft, aRight):
         print(aQuestion)
@@ -187,13 +184,16 @@ class DecisionNode:
         thisRight = []
         if len(aLeft.getClasses()) > 1:
             buffA, buffB = aLeft.splitData(aLeft.getBestQuestion())
-            thisLeft = DecisionNode.createFromData(aLeft.getBestQuestion(), buffA, buffB)
+            thisLeft = DecisionNode.createFromData(
+                aLeft.getBestQuestion(), buffA, buffB)
 
         if len(aRight.getClasses()) > 1:
             buffA, buffB = aRight.splitData(aRight.getBestQuestion())
-            thisRight = DecisionNode.createFromData(aRight.getBestQuestion(), buffA, buffB)
+            thisRight = DecisionNode.createFromData(
+                aRight.getBestQuestion(), buffA, buffB)
 
-        chooser = (len(aLeft.getClasses()) > 1)*3 + (len(aRight.getClasses()) > 1)*5
+        chooser = (len(aLeft.getClasses()) > 1)*3 + \
+            (len(aRight.getClasses()) > 1)*5
         #print("chooser: ", chooser, " | ThisLeft: ", thisLeft, " | thisRight: ", thisRight)
         if chooser == 0:
             return cls(aQuestion, aLeft.getClasses()[0], aRight.getClasses()[0])
@@ -204,7 +204,6 @@ class DecisionNode:
         else:
             return cls(aQuestion, thisLeft, thisRight)
 
-
     @classmethod
     def createFromJson(cls, aJson):
         if isinstance(aJson, int) or isinstance(aJson, float) or isinstance(aJson, str):
@@ -213,7 +212,6 @@ class DecisionNode:
         question = Question(aJson[0]['column'], aJson[0]['value'])
         question.set_label(aJson[0]['name'])
         return cls(question, DecisionNode.createFromJson(aJson[1]), DecisionNode.createFromJson(aJson[2]))
-
 
     def findAnswer(self, aDataRow, translations):
         if self.question.compare(aDataRow, translations):
@@ -227,7 +225,6 @@ class DecisionNode:
             else:
                 return self.right
 
-
     def drawItself(self):
         return self.question.question_text()
 
@@ -239,10 +236,10 @@ class DecisionTree:
         self.ax = None
         self.head = aHead
 
-    #Different creators:
+    # Different creators:
     @classmethod
     def createFromData(cls, aTrainingData):
-        a1,a2 = aTrainingData.splitData(aTrainingData.getBestQuestion())
+        a1, a2 = aTrainingData.splitData(aTrainingData.getBestQuestion())
         return cls(DecisionNode.createFromData(aTrainingData.getBestQuestion(), a1, a2))
 
     @classmethod
@@ -258,10 +255,9 @@ class DecisionTree:
             jsoned_tree = json.load(infile)
         return cls.LoadHead(jsoned_tree)
 
+    # Methods:
 
-
-    #Methods:
-    def findAnswer(self, aDataRow, translations = None):
+    def findAnswer(self, aDataRow, translations=None):
         if translations is None:
             translations = range(0, len(aDataRow))
         return self.head.findAnswer(aDataRow, translations)
@@ -271,11 +267,16 @@ class DecisionTree:
             draw_text(self.ax, anLastLength, anLastHeight, aNextNode, 10)
             return anLastHeight - 0.1
         else:
-            self.ax.plot([anLastLength, anLastLength + 0.4], [anLastHeight, anLastHeight], '-k', color="g")
-            new_height = self.drawPart(aNextNode.left, anLastLength + 0.4, anLastHeight)
-            self.ax.plot([anLastLength, anLastLength + 0.4], [anLastHeight, new_height], '-k', color="firebrick")
-            new_height = self.drawPart(aNextNode.right, anLastLength + 0.4, new_height)
-            draw_text(self.ax, anLastLength, anLastHeight, aNextNode.question.question_text(), 10)
+            self.ax.plot([anLastLength, anLastLength + 0.4],
+                         [anLastHeight, anLastHeight], '-k', color="g")
+            new_height = self.drawPart(
+                aNextNode.left, anLastLength + 0.4, anLastHeight)
+            self.ax.plot([anLastLength, anLastLength + 0.4],
+                         [anLastHeight, new_height], '-k', color="firebrick")
+            new_height = self.drawPart(
+                aNextNode.right, anLastLength + 0.4, new_height)
+            draw_text(self.ax, anLastLength, anLastHeight,
+                      aNextNode.question.question_text(), 10)
             return new_height
 
     def savePart(self, aNextNode):
@@ -288,8 +289,8 @@ class DecisionTree:
         print(self.savePart(self.head))
         print(json.dumps(self.savePart(self.head)))
         with open(aFile, 'w') as outfile:
-            json.dump(self.savePart(self.head), outfile, indent=2, separators=(',', ': '))
-
+            json.dump(self.savePart(self.head), outfile,
+                      indent=2, separators=(',', ': '))
 
     def loadTree(self, aFile):
         with open(aFile, 'r') as infile:
@@ -298,11 +299,11 @@ class DecisionTree:
 
     def drawTree(self):
         self.fig = plt.figure(figsize=(10, 10))
-        self.ax = self.fig.add_axes([0, 0, 0.8, 1], frameon=False, xticks=[], yticks=[])
+        self.ax = self.fig.add_axes(
+            [0, 0, 0.8, 1], frameon=False, xticks=[], yticks=[])
         self.drawPart(self.head, 0, 1)
         #draw_text(self.ax, 0, 1, self.head.question.question_text(), 10)
         plt.show()
-
 
 
 '''
