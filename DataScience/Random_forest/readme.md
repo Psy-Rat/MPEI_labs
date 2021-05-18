@@ -2,7 +2,7 @@
 
 Небольшая ученическая программа, реализующая модель машинного обучения Random Forest по типу CART. Для реального, практического использования, конечено, лучше испаользовать не pure-python реализацию, а, например, [эту](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html#sklearn-ensemble-randomforestclassifier) реализацию в [sklearn](https://scikit-learn.org/stable/about.html)
 
-Поскольку проект давний, ученический, фактически являющийся лабораторной по выбору, то о никаком MVC и прочей архитектуре речи не идёт. В cuteform.py спагеттирована вся логика вьюхи, а в descisiontree.py логика работы с деревьями. Самый значимый момент, а заодно и самый короткий это формула чистоты джини: [Gini impurity](https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity), которая лижит в виде def функции в самом верху файла descisiontree.py
+ППоскольку проект давний, ученический, фактически являющийся лабораторной по выбору, то о никаком SOLID, KISS, DRY, YAGNI, а уж тем более MVC и прочей архитектуре речи не идёт. В cuteform.py спагеттирована вся логика вьюхи, а в descisiontree.py логика работы с деревьями. Самый значимый момент, а заодно и самый короткий это формула чистоты джини: [Gini impurity](https://en.wikipedia.org/wiki/Decision_tree_learning#Gini_impurity), которая лижит в виде def функции в самом верху файла descisiontree.py
 
 # Запуск
 
